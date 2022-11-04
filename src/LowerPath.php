@@ -16,6 +16,12 @@ use Psr\Http\Message\ResponseFactoryInterface as ResponseFactory;
 class LowerPath implements Middleware
 {
 	/**
+	 * @var ResponseFactory
+	 */
+	protected $factory;
+
+
+	/**
 	 *
 	 */
 	public function __construct(ResponseFactory $factory)
